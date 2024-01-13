@@ -1,0 +1,18 @@
+
+### sum
+GET http://localhost:8080/sum
+Content-Type: application/json
+
+{
+  "a": 1,
+  "b": 20
+}
+
+###
+GET http://localhost:8080/concat
+Content-Type: application/json
+
+{
+  "a": "foo",
+  "b": "bar"
+}
