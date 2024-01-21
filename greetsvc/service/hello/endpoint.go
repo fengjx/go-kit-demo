@@ -1,11 +1,9 @@
-package endpoint
+package hello
 
 import (
 	"context"
 
 	"github.com/go-kit/kit/endpoint"
-
-	"github.com/fengjx/go-kit-demo/greetsvc/service"
 )
 
 // SumRequest Sum方法的参数.
@@ -34,7 +32,7 @@ type ConcatResponse struct {
 
 type Endpoint func(ctx context.Context, request interface{}) (response interface{}, err error)
 
-func MakeSumEndpoint(svc service.AddService) endpoint.Endpoint {
+func MakeSumEndpoint(svc AddService) endpoint.Endpoint {
 	return func(ctx context.Context, request interface{}) (interface{}, error) {
 		req := request.(SumRequest)
 		v, err := svc.Sum(ctx, req.A, req.B)
@@ -45,7 +43,7 @@ func MakeSumEndpoint(svc service.AddService) endpoint.Endpoint {
 	}
 }
 
-func MakeConcatEndpoint(svc service.AddService) endpoint.Endpoint {
+func MakeConcatEndpoint(svc AddService) endpoint.Endpoint {
 	return func(ctx context.Context, request interface{}) (interface{}, error) {
 		req := request.(ConcatRequest)
 		v, err := svc.Concat(ctx, req.A, req.B)

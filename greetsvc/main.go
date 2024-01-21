@@ -6,21 +6,20 @@ import (
 
 	httptransport "github.com/go-kit/kit/transport/http"
 
-	"github.com/fengjx/go-kit-demo/greetsvc/endpoint"
-	"github.com/fengjx/go-kit-demo/greetsvc/service"
+	hello2 "github.com/fengjx/go-kit-demo/greetsvc/service/hello"
 	"github.com/fengjx/go-kit-demo/greetsvc/transport"
 )
 
 func main() {
-	svc := service.NewAddSvc()
+	svc := hello2.NewAddSvc()
 	sumHandler := httptransport.NewServer(
-		endpoint.MakeSumEndpoint(svc),
+		hello2.MakeSumEndpoint(svc),
 		transport.DecodeSumRequest,
 		transport.EncodeResponse,
 	)
 
 	concatHandler := httptransport.NewServer(
-		endpoint.MakeConcatEndpoint(svc),
+		hello2.MakeConcatEndpoint(svc),
 		transport.DecodeCountRequest,
 		transport.EncodeResponse,
 	)

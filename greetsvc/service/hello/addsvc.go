@@ -1,4 +1,4 @@
-package service
+package hello
 
 import (
 	"context"
