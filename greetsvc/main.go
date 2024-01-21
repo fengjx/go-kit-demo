@@ -26,6 +26,7 @@ func main() {
 
 	http.Handle("/sum", sumHandler)
 	http.Handle("/concat", concatHandler)
+	log.Println("http server start")
 	log.Fatal(http.ListenAndServe(":8080", nil))
 
 }

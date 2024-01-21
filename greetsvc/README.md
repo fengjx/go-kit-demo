@@ -2,6 +2,13 @@
 
 go-kit getting started example
 
+## run
+
+```bash
+go run main.go
+```
+
+
 ## test
 
 ```bash
