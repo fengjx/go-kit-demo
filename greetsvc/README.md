@@ -1,6 +1,5 @@
-# greetsvc
+# go-kit学习指南 - 基础概念和架构
 
-go-kit getting started example
 
 ## run
 
@@ -8,15 +7,9 @@ go-kit getting started example
 go run main.go
 ```
 
-
 ## test
 
 ```bash
-# sum
-curl http://localhost:8080/sum -d '{"a":10, "b":20}'
-```
-
-```bash
-# concat
-curl http://localhost:8080/concat -d '{"a":"boo", "b":"bar"}'
+# sya-hello
+curl http://localhost:8080/say-hello?name=fengjx
 ```
