@@ -1,5 +1,7 @@
 # go-kit学习指南 - 多协议支持
 
+文档：<https://blog.fengjx.com/pages/efb886/>
+
 ## 安装编译工具
 
 - protoc 安装：<https://grpc.io/docs/protoc-installation/>
@@ -44,6 +46,11 @@ go run cmd/greetcli/mian.go
 ```
 
 
+## 相关项目
 
+- [luchen](https://github.com/fengjx/luchen) 基于go-kit封装的微服务框架
+- [lca](https://github.com/fengjx/lca) 基于 amis 实现的低代码后台系统
+- [glca](https://github.com/fengjx/glca) lca 接口实现。基于`luchen`框架开发
+- [lc](https://github.com/fengjx/lc) glca 的命令行工具
 
 
