@@ -8,11 +8,11 @@
 - greetmiddleware: [go-kit学习指南 - 中间件](https://blog.fengjx.com/pages/d6f092/)
 - greetdiscovery: [go-kit开发微服务 - 服务注册与发现](https://blog.fengjx.com/pages/a15528/)
 
-## 相关项目
+## 相关推荐
 
-- [luchen](https://github.com/fengjx/luchen) 基于go-kit封装的微服务框架
-- [lca](https://github.com/fengjx/lca) 基于 amis 实现的低代码后台系统
-- [glca](https://github.com/fengjx/glca) lca 接口实现。基于`luchen`框架开发
-- [lc](https://github.com/fengjx/lc) glca 的命令行工具
-
+- [lucky](https://github.com/fengjx/lucky) 后端工程
+- [lucky-web](https://github.com/fengjx/lucky-web) 前端工程
+- [lc](https://github.com/fengjx/lc) cli 工具
+- [luchen](https://github.com/fengjx/luchen) 基础框架
+- [daox](https://github.com/fengjx/daox) 数据库访问辅助类库
 
